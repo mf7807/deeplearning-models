@@ -103,6 +103,4 @@ With the pretrained ResNet50 architecture fixed, experiments were performed by a
 
 - Reduce learning rate further (5e-5 or 1e-5)  
 - Increase epochs (15-20)  
-- Try cosine learning rate scheduler  
 - Gradually unfreeze layer3 + layer4  
-- Compare Adam vs SGD for deeper fine-tuning  
