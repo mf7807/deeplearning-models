@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env/
+
+# PyTorch / ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Logs & outputs
+runs/
+logs/
+outputs/
+checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large dataset folders
+data/
+tiny-imagenet-200/
+cifar-10-batches-py/
+
+# IDE files
+.vscode/
+.idea/
