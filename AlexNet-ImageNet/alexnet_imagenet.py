@@ -184,9 +184,3 @@ with torch.no_grad():
     acc = (all_correct_num / all_sample_num) * 100
     print('Accuracy of the baseline model: {:.3f}'.format(acc), flush=True)
     print("Model finished training")
-
-# Accuracy of the baseline model: 55.200 - unfrozen
-# Model finished training
-
-# Accuracy of the baseline model: 57.000 - frozen
-# Model finished training
