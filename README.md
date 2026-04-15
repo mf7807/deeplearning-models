@@ -75,7 +75,7 @@ deeplearning-models
 │
 ├── LeNet-MNIST
 ├── AlexNet-TinyImageNet
-├── ResNet50
+├── ResNet
 │   ├── CIFAR10
 │   └── TinyImageNet
 ```
