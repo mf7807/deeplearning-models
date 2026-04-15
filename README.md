@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a series of deep learning experiments exploring different Convolutional Neural Network (CNN) architectures across multiple datasets using PyTorch. The goal is to understand model behavior, transfer learning, and fine-tuning strategies through multiple experiments.
+This repository contains a series of deep learning experiments exploring different Convolutional Neural Network (CNN) architectures across multiple datasets using PyTorch. The goal is to understand model behavior, transfer learning, and fine-tuning strategies through progressive experimentation.
 
 The experiments progress from:
 - Training a CNN from scratch  
@@ -64,7 +64,6 @@ Each folder contains:
 - Convolutional Neural Networks (CNNs)
 - Transfer Learning
 - Fine-Tuning
-- Layer Freezing and Unfreezing
 - Optimizer Comparison (SGD vs Adam)
 - Data Augmentation
 - Model Evaluation
