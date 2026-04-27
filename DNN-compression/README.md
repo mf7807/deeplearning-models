@@ -4,7 +4,6 @@
 
 Apply and compare different deep learning model compression techniques on a fine-tuned ResNet50 model trained on CIFAR-10. The goal is to reduce model size while maintaining performance.
 
----
 
 ## Base Model
 
@@ -14,10 +13,10 @@ Apply and compare different deep learning model compression techniques on a fine
 - Output: 10-class classification
 
 **Baseline Performance**
-- Accuracy: **92.52% (Initial)**,**93.53%**
+- Accuracy: **92.52% (Model used for pruning)** ,**93.53% (Model used for quantizations)**
 - Model Size: ~200 MB
 
----
+
 
 ## Compression Techniques
 
@@ -42,7 +41,6 @@ Pruning removes less important weights from the model to reduce complexity.
 - Higher pruning leads to noticeable accuracy drop  
 - Fine-tuning helps recover performance after pruning  
 
----
 
 ### 2. Dynamic Quantization (PyTorch)
 
@@ -63,7 +61,6 @@ Weights are converted from float32 to int8 using built-in PyTorch quantization.
 - Minimal impact on accuracy  
 - Efficient and easy-to-apply compression method  
 
----
 
 ### 3. Manual Quantization
 
@@ -84,7 +81,6 @@ Weights are scaled using a non-zero offset.
 - Asymmetric quantization performed slightly better  
 - Better suited for non-zero-centered weight distributions  
 
----
 
 ### 4. Non-Linear Quantization (K-Means)
 
@@ -106,7 +102,6 @@ Weights are clustered into discrete values using k-means.
 - Increasing k beyond effective weight diversity did not improve results  
 - K-means requires careful tuning compared to linear quantization  
 
----
 
 ## Key Insights
 
@@ -117,7 +112,6 @@ Weights are clustered into discrete values using k-means.
 - Increasing cluster size improves accuracy but reduces compression efficiency  
 - Fine-tuning helps recover performance after aggressive compression  
 
----
 
 ## Code Reference
 
@@ -125,16 +119,16 @@ Each technique is implemented in separate scripts within this folder:
 
 - `pruning.py`
 - `dynamic_quantization.py`
-- `manual_quantization.py`
+- `symmetric_quantization.py`
+- `asymmetric_quantization.py`
 - `kmeans_quantization.py`
 
----
+
 
 ## Conclusion
 
 Model compression can significantly reduce model size while preserving performance when applied carefully. Among the methods explored, dynamic and manual quantization provided the most efficient compression, while k-means demonstrated the trade-off between compression strength and accuracy.
 
----
 
 ## Future Work
 
