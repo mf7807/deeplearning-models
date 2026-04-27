@@ -54,11 +54,11 @@ Device: CPU / GPU (CUDA if available)
 
 ## Baseline Hyperparameters
 
-Optimizer: Adam  
-Epochs: 15  
-Learning rate: 5e-5  
-Frozen Layers: All except layer4 and FC  
-Trainable Layers: Layer4 + FC
+Optimizer: SGD  
+Epochs: 10  
+Learning rate: 1e-4  
+Frozen Layers: All except FC  
+Trainable Layers: FC only
 
 
 ## Experiments & Results
@@ -103,6 +103,4 @@ With the pretrained ResNet50 architecture fixed, experiments were performed by a
 
 - Reduce learning rate further (5e-5 or 1e-5)  
 - Increase epochs (15-20)  
-- Try cosine learning rate scheduler  
 - Gradually unfreeze layer3 + layer4  
-- Compare Adam vs SGD for deeper fine-tuning  
