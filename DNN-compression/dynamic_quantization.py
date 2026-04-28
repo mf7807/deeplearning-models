@@ -51,7 +51,7 @@ model.eval()
 # Quantizing the model for inference
 quantized_model = torch.quantization.quantize_dynamic(
     model,
-    {torch.nn.Linear},  # Quantizing Linear layers (you can add others like Conv2d if needed)
+    {torch.nn.Linear},  # Quantizing Linear layers
     dtype=torch.qint8    # Use int8 quantization
 )
 
