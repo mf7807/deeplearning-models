@@ -185,13 +185,3 @@ with torch.no_grad():
     print(f'Accuracy of the model: {acc:.3f}')
 
 print("Model finished evaluation")
-
-# Optional:Save model and optimizer states
-# torch.save({
-#     'epoch': num_epochs,  
-#     'model_state_dict': model.state_dict(),
-#     'optimizer_state_dict': optimizer.state_dict(),
-#     'loss': cost,  
-# }, 'vit.pth')
-
-# print("Model saved successfully")
