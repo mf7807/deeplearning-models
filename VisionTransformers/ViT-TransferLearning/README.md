@@ -74,7 +74,5 @@ A pretrained Vision Transformer model was used and adapted for Tiny ImageNet cla
 ## Future Work
 
 - Unfreeze additional transformer layers for deeper fine-tuning
-- Experiment with learning rate schedulers
-- Compare ViT against Swin Transformer and MobileViT
 - Apply compression techniques such as quantization and pruning
 
