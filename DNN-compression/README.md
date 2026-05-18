@@ -1,4 +1,4 @@
-# ResNet50 — Model Compression (CIFAR-10)
+# ResNet50 - Model Compression (CIFAR-10)
 
 ## Objective
 
